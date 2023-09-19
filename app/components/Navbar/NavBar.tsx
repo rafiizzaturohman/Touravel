@@ -9,7 +9,7 @@ const NavBar: React.FC = () => {
     <nav id="NavBar">
       <div className="container max-w-7xl mx-auto">
         <div className="w-full">
-          <div className="flex flex-row justify-between items-center p-8 md:p-10 box-border">
+          <div className="flex flex-row justify-between items-center p-8 md:py-10 md:px-2 box-border">
             <div className="w-1/3 md:w-full flex flex-row justify-start items-center">
               <img
                 src="/icons/Touravel.svg"
