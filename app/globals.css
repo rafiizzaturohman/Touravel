@@ -19,3 +19,10 @@
 body {
   background-color: #D0FCFF;
 }
+
+/* Custom text-stroke class */
+.text-stroke {
+  -webkit-text-stroke-width: 0.05px; /* Width of the stroke */
+  -webkit-text-stroke-color: #535353; /* Color of the stroke */
+  text-shadow: 0.05px 0.05px 0 #535353; /* Offset and color of the shadow */
+}

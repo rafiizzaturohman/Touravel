@@ -14,15 +14,6 @@ const config: Config = {
         neon: '0 0 5px theme("colors.sky.700"), 0 0 10px theme("colors.sky.500")'
       }
     },
-    screens: {
-      '2xs': '480px',
-      'xs': '640px',
-      'sm': '768px',
-      'md': '800px',
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1440px'
-    },
     fontFamily :{
       'raleway': `${Raleway}`
     }
