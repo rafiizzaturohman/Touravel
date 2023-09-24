@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
     <section id="Hero">
       <div className="container max-w-7xl mx-auto">
         <div className="relative items-center">
-          <div className="absolute -z-10 -top-6 md:-top-10 right-0 md:-right-24 flex flex-col items-end">
+          <div className="absolute -z-10 -top-6 md:-top-14 right-0 md:-right-24 flex flex-col items-end">
             <img
               src="/images/world-map.png"
               alt="World Map"
@@ -23,7 +23,8 @@ const Hero: React.FC = () => {
             <div className="mx-4">
               <div className="space-y-14">
                 <Introductions />
-                <GetSchedule />
+
+                {/* <GetSchedule /> */}
               </div>
             </div>
           </div>

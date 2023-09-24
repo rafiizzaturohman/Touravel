@@ -15,7 +15,7 @@ const config: Config = {
       }
     },
     fontFamily :{
-      'raleway': `${Raleway}`
+      'raleway': ['Raleway']
     }
   },
   plugins: [
