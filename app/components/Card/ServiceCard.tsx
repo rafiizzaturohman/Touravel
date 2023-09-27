@@ -39,13 +39,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         >
           <div className="flex flex-row md:flex-col justify-start items-center px-2 py-1 space-x-3">
             {no == 0 ? (
-              <BiWorld className="text-xl" color="white" />
+              <BiWorld className="text-xl md:text-4xl" color="white" />
             ) : no == 1 ? (
-              <FaPeopleLine className="text-xl" color="white" />
+              <FaPeopleLine className="text-xl md:text-4xl" color="white" />
             ) : no == 2 ? (
-              <FaCartPlus className="text-xl" color="white" />
+              <FaCartPlus className="text-xl md:text-4xl" color="white" />
             ) : (
-              <FaBed className="text-xl" color="white" />
+              <FaBed className="text-xl md:text-4xl" color="white" />
             )}
 
             <h4 className="font-bold text-xs">{title}</h4>
@@ -60,13 +60,16 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
             <div className="flex flex-col justify-center w-full space-y-2 text-center">
               <div className="flex flex-auto justify-center">
                 {no == 0 ? (
-                  <BiWorld className="text-2xl" color="white" />
+                  <BiWorld className="text-2xl md:text-4xl" color="white" />
                 ) : no == 1 ? (
-                  <FaPeopleLine className="text-2xl" color="white" />
+                  <FaPeopleLine
+                    className="text-2xl md:text-4xl"
+                    color="white"
+                  />
                 ) : no == 2 ? (
-                  <FaCartPlus className="text-2xl" color="white" />
+                  <FaCartPlus className="text-2xl md:text-4xl" color="white" />
                 ) : (
-                  <FaBed className="text-2xl" color="white" />
+                  <FaBed className="text-2xl md:text-4xl" color="white" />
                 )}
               </div>
 
