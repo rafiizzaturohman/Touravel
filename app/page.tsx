@@ -1,6 +1,7 @@
 import NavBar from "./components/Navbar/NavBar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
+import Destinations from "./components/Destinations";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Services />
+      <Destinations />
     </main>
   );
 }
