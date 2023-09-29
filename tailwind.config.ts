@@ -1,6 +1,5 @@
 import type { Config } from 'tailwindcss'
 import plugin from 'tailwindcss/plugin';
-import { Raleway } from 'next/font/google';
 
 const config: Config = {
   content: [

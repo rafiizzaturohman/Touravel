@@ -1,3 +1,6 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import NavBar from "./components/Navbar/NavBar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";

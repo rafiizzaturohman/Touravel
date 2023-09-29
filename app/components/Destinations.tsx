@@ -3,6 +3,60 @@
 import { useRef } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import Slider from "react-slick";
+import DestinationCard from "./Card/DestinationCard";
+
+const destinationsList = [
+  {
+    image: "kuta",
+    name: "kuta",
+    location: "indonesia",
+    rating: "4.8",
+    type: "beach",
+    cost: 300,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam integer eget ut lorem.",
+  },
+  {
+    image: "bangkok",
+    name: "bangkok",
+    location: "thailand",
+    rating: "4.8",
+    type: "beach",
+    cost: 300,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam integer eget ut lorem.",
+  },
+  {
+    image: "yogya",
+    name: "yogyakarta",
+    location: "indonesia",
+    rating: "4.8",
+    type: "beach",
+    cost: 300,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam integer eget ut lorem.",
+  },
+  {
+    image: "zermatt",
+    name: "zermatt",
+    location: "swiss",
+    rating: "4.8",
+    type: "beach",
+    cost: 300,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam integer eget ut lorem.",
+  },
+  {
+    image: "zermatt",
+    name: "zermatt",
+    location: "swiss",
+    rating: "4.8",
+    type: "beach",
+    cost: 300,
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam integer eget ut lorem.",
+  },
+];
 
 const Destinations = () => {
   const sliderRef = useRef<Slider>(null);
@@ -32,12 +86,20 @@ const Destinations = () => {
     dots: false,
     infinite: false,
     arrows: false,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     variableWidth: false,
     responsive: [
       {
-        breakpoint: 720,
+        breakpoint: 1080,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          variableWidth: false,
+        },
+      },
+      {
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -45,17 +107,9 @@ const Destinations = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 450,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          variableWidth: false,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
           variableWidth: false,
         },
@@ -66,32 +120,34 @@ const Destinations = () => {
   return (
     <section id="destinations">
       <div className="container max-w-7xl mx-auto">
-        <div className="mx-4">
-          <div className="flex flex-row justify-between items-center">
-            <div>
-              <p className="uppercase text-[10px] md:text-xl text-[#F0B666] font-bold">
-                top destination
-              </p>
-              <h4 className="capitalize text-sm md:text-4xl tracking-wide font-bold">
-                explore top destination
-              </h4>
-            </div>
-
-            <div className="flex flex-row space-x-1">
-              <SlickPrev />
-
-              <SlickNext />
-            </div>
-          </div>
-
-          <div className="my-4">
-            <Slider ref={sliderRef} {...settings}>
-              <div className="relative">
-                <div className="w-28 md:w-full">
-                  <img src="/images/destinationImg/bangkok.png" alt="Bangkok" />
-                </div>
+        <div className="mx-4 my-20">
+          <div className="">
+            <div className="flex flex-row justify-between items-center">
+              <div>
+                <p className="uppercase text-[10px] md:text-xl text-[#F0B666] font-bold">
+                  top destination
+                </p>
+                <h4 className="capitalize text-sm md:text-4xl tracking-wide font-bold">
+                  explore top destination
+                </h4>
               </div>
-            </Slider>
+
+              <div className="flex flex-row gap-1">
+                <SlickPrev />
+
+                <SlickNext />
+              </div>
+            </div>
+
+            <div>
+              <Slider ref={sliderRef} {...settings}>
+                {destinationsList.map((item, index) => (
+                  <div key={index}>
+                    <DestinationCard {...item} />
+                  </div>
+                ))}
+              </Slider>
+            </div>
           </div>
         </div>
       </div>
