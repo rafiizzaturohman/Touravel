@@ -7,6 +7,7 @@ import Services from "./components/Services";
 import Destinations from "./components/Destinations";
 import Offer from "./components/Offer";
 import OurPerformance from "./components/Performance";
+import Comment from "./components/Comment";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Destinations />
       <Offer />
       <OurPerformance />
+      <Comment />
     </main>
   );
 }
