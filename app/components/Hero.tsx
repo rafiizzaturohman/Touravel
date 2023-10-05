@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
             />
           </div>
 
-          <div className="flex flex-col space-y-4 md:flex-row-reverse md:justify-between items-center">
+          <div className="flex flex-col space-y-4 md:space-y-0 md:flex-row-reverse md:justify-between items-center">
             <div className="w-3/4 md:w-[847px] md:h-auto">
               <img src="/images/hero.png" alt="Hero" />
             </div>

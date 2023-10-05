@@ -23,7 +23,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   }, []);
 
   return (
-    <div className="flex flex-col w-2/3 md:flex-row md:h-[4vw] md:w-full">
+    <div className="flex flex-col w-2/3 md:flex-row md:w-full">
       {isOpen == false ? (
         <div
           className={
@@ -51,7 +51,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         </div>
       ) : (
         <div
-          className="bg-[#FFA451] w-[90vw] md:w-full md:h-[8vw] flex flex-col md:flex-row  md:justify-center text-white rounded-r-lg md:rounded-br-none md:rounded-t-lg py-2"
+          className="bg-[#FFA451] w-[90vw] md:w-full flex flex-col md:flex-row  md:justify-center text-white rounded-r-lg md:rounded-br-none md:rounded-t-lg py-2"
           onClick={toggleOpen}
         >
           <div className="flex flex-row md:flex-col justify-evenly items-center md:w-1/2">

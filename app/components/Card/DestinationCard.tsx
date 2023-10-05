@@ -25,7 +25,7 @@ const DestinationCard: React.FC<DestinationListProps> = ({
         <img src={`/images/destinationImg/${image}.png`} alt={image} />
 
         <div className="absolute z-0 -bottom-5">
-          <div className="bg-white/5 backdrop-blur-[5px] backdrop-filter p-6 rounded-lg border border-slate-800">
+          <div className="bg-gray-50/5 backdrop-blur-[5px] backdrop-filter p-4 rounded-lg border border-slate-800">
             <div className="capitalize text-white">
               <div className="flex flex-row items-center space-x-10">
                 <div className="space-y-2">

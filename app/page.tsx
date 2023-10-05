@@ -5,6 +5,8 @@ import NavBar from "./components/Navbar/NavBar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Destinations from "./components/Destinations";
+import Offer from "./components/Offer";
+import OurPerformance from "./components/Performance";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Hero />
       <Services />
       <Destinations />
+      <Offer />
+      <OurPerformance />
     </main>
   );
 }
